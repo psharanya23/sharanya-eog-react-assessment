@@ -80,9 +80,9 @@ const ChartComp = (props: IChartProps) => {
             .slice(0, maxDataPoints)
             .reverse();
           a.labels = measurements.map(({ at: time }) => formatTime(new Date(time)));
-          const backgroundColor = MatriceColorList[metric];
-          const borderColor = MatriceBorderColor[metric];
-          const label = MatriceTypes[metric];
+          const backgroundColor = MatriceColorList[metric.toString()];
+          const borderColor = MatriceBorderColor[metric.toString()];
+          const label = MatriceTypes[metric.toString()];
           a.datasets.push({
             label,
             fill: false,
