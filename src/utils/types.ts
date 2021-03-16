@@ -8,7 +8,7 @@ export interface IFluxAction {
 export type Optional<T> = { [P in keyof T]?: T[P] };
 
 export interface IMatriceTypes {
-  flareTemp: string;
+  [flareTemp : string]: string;
   waterTemp: string;
   casingPressure: string;
   tubingPressure: string;
